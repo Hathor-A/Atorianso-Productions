@@ -1,0 +1,81 @@
+[
+    {
+        "id" : "a",
+        "nom" : "Grand-Est",
+        "changement" : "Augmentation de +2,2°C en moyenne à Mulhouse entre 1959 et 2019 et diminution de -4,8 jours de gel par décennie à Nancy entre 1959 et 2015.",
+        "sources" : "Source : Oracle Grand-Est (2020) d’après Météo-France"
+    },
+    {
+        "id" : "b",
+        "nom" : "Nouvelle-Aquitaine",
+        "changement" : "Élévation de la température atmosphérique moyenne estivale d’environ 3°C depuis 1950.",
+        "sources" : "Source : ORRNA"
+    },
+    {
+        "id" : "c",
+        "nom" : "Auvergne Rhône-Alpes",
+        "changement" : "Depuis 1960, augmentation du nombre de journées chaudes (+17 journées avec une températures maximales supérieures à 25°C) et une baisse de l’enneigement à moyenne altitude (-31%) (en-dessous de 1 700 m),",
+        "sources" : "Source : Auvergne Rhône-Alpes Tourisme"
+    },
+    {
+        "id" : "d",
+        "nom" : "Bourgogne-Franche-Comté",
+        "changement" : "Réchauffement de plus de 1,5 °C entre 1991 et 2019. La région a connu 35 vagues de chaleur depuis 20 ans, dont 19 depuis 10 ans. Signe du dérèglement global, entre 2017 et 2019, neuf tempêtes hivernales ont balayé la Bourgogne-Franche-Comté.",
+        "sources" : "Source : Région Bourgogne-Franche-Comté"
+    },
+    {
+        "id" : "e",
+        "nom" : "Bretagne",
+        "changement" : "Evolutions notables entre 1959 et 2018 : hausse de 10% des précipitations estivales ainsi qu'une hausse des moyennes annuelles des températures de +0,8°C à +1,2°C.",
+        "sources" : "Source : Météo France"
+    },
+    {
+        "id" : "f",
+        "nom" : "Centre-Val de Loire",
+        "changement" : "On prévoit entre +18 à +50 jours par an de journées chaudes d'ici 2060. L'augmentation des fréquences de canicule (+33% par an) et la baisse des précipitations en été (-13% par rapport à la référence actuelle -source ClimatHD) vont contribuer à augmenter le risque de feux de forêt en région.",
+        "sources" : "Source : Agence régionale de la biodiversité Centre-Val de Loire"
+    },
+    {
+        "id" : "g",
+        "nom" : "Corse",
+        "changement" : "Entre les années 50 et aujourd’hui, on constate une augmentation de 1°C de la température globale. Les neiges permanentes ont tendance à disparaître.",
+        "sources" : "Source : Collectivité Territoriale de Corse"
+    },
+    {
+        "id" : "h",
+        "nom" : "Ile-de-France",
+        "changement" : "La dernière décennie (2010-2019) était plus chaude de 1,1 °C que la fin du 19ᵉ siècle (1850-1900), atteignant des niveaux jamais vus depuis au moins 125 000 ans, d’après le 6e rapport d’évaluation du GIEC. On constate environ 5 nuits tropicales par an en moyenne (température minimale supérieure à 20 °C) alors qu’elles étaient très rares (0,2 par an) à la fin du 19ᵉ siècle.",
+        "sources" : "Source : Agence Parisienne du climat"
+    },
+    {
+        "id" : "i",
+        "nom" : "Occitanie",
+        "changement" : "Le nombre de jours chauds (température max supérieure à 25°C), est en nette augmentation sur la période 1961-2012. Les tendances vont de +5 à +7 jours tous les 10 ans. Environ 1,4 million de personnes sont exposées au risque inondations sur la partie est de l’Occitanie (ex Languedoc Roussillon).",
+        "sources" : "Source : Météo France et Observatoire des Risques Naturels Occitanie"
+    },
+    {
+        "id" : "j",
+        "nom" : "Haut-de-France",
+        "changement" : "Depuis 1955, on constate une tendance moyenne à l'élévation des précipitations (+1,90 jours par décennies de fortes pluies), de la températures (+0,29°C par décennies en moyenne), du niveau de la mer (+1,60cm par décennies). 1ère région de France où les constructions humaines sont les plus vulnérables au changement climatiques.",
+        "sources" : "Source : Observatoire du Climat Haut-de-France et Libération"
+    },
+    {
+        "id" : "k",
+        "nom" : "Nomandie",
+        "changement" : "Ces 60 dernières années, la température s’est élevée de 0.6 à 0.9 degrés, en moyenne, en Normandie. La mer de la Manche s’élève actuellement de 2 à 3 mm par an (3 mm à Brest, 2,1 mm à Cherbourg ou au Havre).",
+        "sources" : "Source : DREAL Normandie"
+    },
+    {
+        "id" : "l",
+        "nom" : "Pays de la Loire",
+        "changement" : "Evolution du climat observée dans la région entre 1961 et 2019 : augmentation des températures annuelles (+1,2 à 1,8°C), augmentation des vagues de chaleur (+ 2 à 5 jours par an), diminution du nombre de jours de gel (de 0 à 15 jours par an)." ,
+        "sources" : "Source : Région Pays de la Loire"
+    },
+    {
+        "id" : "m",
+        "nom" : "Provence-Alpes-Cote d'Azur",
+        "changement" : " La région est concernée également par l’augmentation globale du niveau moyen de la mer estimée entre +26 à +82 cm pour 2100. les effets du changement climatiques devraient être une augmentation des températures d’environ 2°C en région PACA à horizon 2050 et jusqu’à plus de 5 °C pour la période 2071-2100. Ce réchauffement serait accompagné d’une diminution des précipitations estivales entraînant un état de sécheresse durant 20 à 50% de l’année.",
+        "sources" : "Source : DREAL Provence-Alpes-Côte d'Azur"
+    }
+
+]

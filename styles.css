@@ -1,0 +1,1029 @@
+/*-----STYLES CSS ---------------------------------------------------*/
+
+/* Media Query ------------------------------------------------*/
+@media (max-width: 200px) {
+    .container {
+      height: 70%;
+    }
+  }
+
+/*---- BODY HEADER---------------------------------------------------*/
+
+
+body {
+    
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #141414;
+    color: #ffffff;
+    min-height: 100px;
+    display: flex;
+    flex-direction: column;
+    line-height: 1.6;
+}
+
+.custom-cursor {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform:translate(-50%, -50%);
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    border-color:  #c80e33;
+    background-color: #000;
+    pointer-events: none;
+    z-index: 99999;
+    transition: transform 0.2s, opacity 0.3s;
+}
+
+.custom-cursor-before {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform:translate(-50%, -50%);
+    background: rgba(0,0,0,0.2);
+    width: 40px;
+    height: 40px;
+    pointer-events: none;
+    border-radius: 50%;
+    border-color:  #c80e33;
+    transition: 0.2s ease;
+    opacity: 1;
+}
+
+header {
+    position: fixed;
+    background-color: #333;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px;
+    padding-right: 590em;
+    color: rgb(249, 248, 250);
+    overflow-y: scroll;
+    
+}
+
+header .logo img {
+    position: fixed;
+    height: 3em;
+    width: 13em;
+    border-radius: 5px;
+    
+    
+}
+
+main {
+    padding: 20px;
+    padding-top: 150px;
+    margin-top: 30px;
+}
+
+
+a {
+    position: relative;
+    display: block;
+    text-decoration: none;
+    color: inherit;
+    margin: 5px;
+}
+
+img {
+    height: 60px;
+    max-width: 150%;
+    display: flex;
+    border-radius: 5px;
+}
+
+.icon {
+    height: 20px;
+    display: flex;
+}
+
+.icon-master {
+    display: flex;
+    margin-left: 23%;
+    
+}
+
+.icon2 {
+    display: flex;
+    margin-left: 50%;
+    margin-right: 50%;
+    background-color: #1f1f1f;
+    align-items: center;
+    border-radius: 15px;
+    
+    
+}
+
+.icon-master2 {
+    display: flex;
+    margin-left: 50%;
+    margin-right: 50%;
+    background-color: #1f1f1f;
+    align-items: center;
+    border-radius: 15px;
+}
+
+footer {
+    background-color: #1f1f1f;
+    color: white;
+    padding: 5px 20px;
+    padding-bottom: 10px;
+    text-align: center;
+    border-radius: 15px;
+    
+}
+
+#btnScrollToTop {
+    display: none;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    z-index: 99;
+    font-size: 33px;
+    border: none;
+    outline: none;
+    background-color: #333;
+    color: rgb(0, 255, 229);
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 20px;
+}
+
+/* ------------------- BARRE DES FILTRES QUI NE BOUGE PAS ------------------------------------------------------------------------------>*/
+.filter-nav {
+    background-color: #333;
+    position: fixed; 
+    top: 0;
+    width: 100%;
+    z-index: 1000; 
+}
+
+.filter-nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+.filter-nav ul li {
+    float: none;
+}
+
+.filter-nav ul li a {
+    display: flex;
+    color: white;
+    text-align: center;
+    padding: 5px 3px;
+    text-decoration: none;
+}
+
+.filter-nav ul li a:hover {
+    background-color: #111;
+}
+
+
+/* ------------------- FIN BARRE DES FILTRES --------------------------> */
+
+#filters-nav {
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 360px;
+    
+}
+
+#filters-nav a {
+    display: block;
+    justify-content: space-between;
+    align-items: center;
+    text-decoration: none;
+    color: #e8d8d8;
+    transition: 0.3s;
+    padding: 5px;
+    padding-top: 0px;
+    overflow-y: scroll;
+    
+}
+
+#filters-nav a:hover {
+    color: #c80e33;
+    
+}
+
+/* ---------------- NAVIGATION SECTION --------------------------------------------> */
+nav ul {
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    padding-top: 20px;
+    
+    
+}
+
+nav ul li {
+    margin: 0 5px;
+}
+
+nav ul li button {
+    background: none;
+    border: none;
+    color: #efecf1;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #515053;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+
+nav ul li a:hover {
+    background-color: #555;
+}
+/* ---------------------------------- VOLET POPUP ------------------------------------ */
+#side-nav {
+    height: 150%;
+    width: 0px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 100px;
+    padding-bottom: 20px;
+    /*display: none; -> Nav cachée par défaut */
+}
+
+.side-nav {
+    height: 180%;
+    width: 0px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 80px;
+    padding-bottom: 20px;
+    
+}
+
+.side-nav a {
+    padding: 8px 8px 8px 23px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: flex;
+    transition: 0.3s;
+    align-items: baseline;
+    gap: 10px;
+}
+
+.side-nav a:hover {
+    color: #c80e33;
+}
+
+.side-nav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+.openbtn {
+    font-size: 30px;
+    cursor: pointer;
+    background-color: #111;
+    color: white;
+    padding: 10px 15px;
+    padding-top: 5px;
+    border: none;
+    border-radius: 15px;
+    position: absolute;
+    bottom: 650px;
+}
+
+.openbtn:hover {
+    background-color: #444;
+}
+
+/* ---------------- CONTENT SECTION ---------------------------------------- */
+
+.content-section {
+    margin-bottom: 40px;
+}
+
+.content-section_2 {
+    margin-bottom: 40px;
+    padding: 20px;
+}
+
+.content-section_3 {
+    height: 100%;
+    margin-bottom: 10px;
+    overflow-y: scroll;
+}
+
+.content-section_2 h2 {
+    margin-bottom: 20px;
+}
+
+.content-section h2 {
+    margin-bottom: 20px;
+}
+
+.card-container {
+    display: flex;
+    gap: 10px;
+    overflow-x: scroll;
+    width: 100%;
+}
+
+.card-container_2 {
+    display: flex;
+    gap: 10px;
+    overflow-x: scroll;
+}
+.card {
+    background-color: #333;
+    border-radius: 10px;
+    overflow: hidden;
+    height: 250px;
+    flex: 0 0 auto;
+    text-decoration: none; /* Supprime la décoration de texte par défaut des liens */
+    color: inherit; /* Hérite la couleur du texte du parent */
+}
+
+.card h3 {
+    padding: 10px;
+    font-size: 1em;
+    margin: 0;
+    text-align: center;
+}
+.card img {
+    height: auto;
+    width: 100%;
+    display: block;
+}
+
+.card:hover {
+    background-color: #c80e33; /* Change la couleur de fond au survol */
+}
+
+/* ---------------- BOUTON SECTION ---------------------------------------- */
+
+.btn{
+    width:60%;
+    height:150%;
+    background-color: rgb(91, 40, 62);
+    color:white;
+    font-size: 1.2rem;
+    border-radius:10px 0 10px 0;
+}
+
+.btn:hover{
+    font-size: 1.3rem;
+    background-color: rgb(111, 17, 58);
+}
+
+.button-with-icon {
+    display: inline-flex;
+    align-items: center;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    background-color: #1e90ff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.button-with-icon .icon {
+    margin-right: 10px;
+}
+
+/*---------------------------------- VIDEO LOGIN ----------------------------------------- */
+
+video {
+    height: 1500%;
+    max-width: 600px;
+    margin: 0 0 auto;
+    display: block;
+}
+
+p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.video-section {
+    text-align: center;
+    padding: 20px;
+}
+
+.video-section video {
+    width: 80%;
+    max-width: 800px;
+    height: auto;
+}
+
+
+/*---------------------------------- VOLET LOGIN ----------------------------------------- */
+
+.login-section {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #333;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.login-section h2 {
+    margin-bottom: 20px;
+}
+
+.login-section form {
+    display: flex;
+    flex-direction: column;
+    background-color: #333;
+}
+
+.login-section label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.login-section input {
+    margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+}
+
+.login-section button {
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: #ff9900;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/*-------------------------------- VOLET CONTACT ------------------------*/
+
+.contact-section {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #333;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.contact-section h2 {
+    margin-bottom: 20px;
+}
+
+.contact-section form {
+    display: flex;
+    flex-direction: column;
+    background-color: #111;
+}
+
+.contact-section label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.contact-section input, .contact-section textarea {
+    margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    border: black;
+}
+
+.contact-section button {
+    padding: 10px;
+    border-radius: 5px;
+    border: black;
+    background-color: #ff9900;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+
+/* ============================== CREDITS =============================> */
+.credits-section {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    border-top: 1px solid #444;
+    border-radius: 15px;
+}
+
+.credits-section2 {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 20px;
+    text-align: center;
+    border-top: 1px solid #444;
+    border-radius: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.credits-section p {
+    margin: 10px 0;
+    
+}
+.credits-section strong {
+    color: #ff9900;
+}
+
+/*--------------------- VOLET Links ---------------------------------------------------------------->>*/
+aside {
+    flex: 1;
+    margin-left: 5px;
+    
+    border-radius: 1%;
+    padding: 20px;
+}
+
+aside a {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-decoration: none;
+    color: #818181;
+    
+    transition: 0.3s;
+}
+
+aside a:hover {
+    color: #f1f1f1;
+}
+
+aside li {
+    padding-bottom: 10px;
+}
+
+/*---------------------------------- Responsive ---------------------------------------------------------------->>*/
+
+/*---------------------------------- Media Queries --------------------------------------------*/
+
+/*------------------------ Tablets ----------------------------*/
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 5px 0;
+    }
+    
+    header {
+        max-width: 768px
+    }
+
+    header .logo img {
+        width: 100px;
+    }
+    
+}
+/*---------------------- Smartphones -----------------------------*/
+@media (max-width: 480px) {
+    .openbtn {
+        display: block;
+    }
+    
+    nav ul {
+        display: flex;
+    }
+    .side-nav a {
+        font-size: 20px;
+        }
+    
+    .side-nav {
+        padding-top: 15px;
+    }
+    
+    header {
+        max-width: 480px
+    }
+    
+    header .logo img {
+        width: auto;
+    }
+    
+}
+
+/* ------------------ Styles pour la section des commentaires ---------------------------------------------------------------->>*/
+.comments {
+    margin-top: 40px;
+    background: grey;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.comments h2 {
+    margin-top: 0;
+}
+
+.comment {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.comment img {
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.comment span {
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.comment p {
+    margin: 0;
+    flex: 1;
+    color: #818181;
+}
+
+.comment button {
+    background: none;
+    border: none;
+    color: #007BFF;
+    cursor: pointer;
+    font-size: 1em;
+    margin-left: 10px;
+}
+
+.comment button:hover {
+    text-decoration: underline;
+}
+
+/*--------------------------- Styles pour le formulaire de commentaire ---------------------------------------------------------------->>*/
+.form {
+    margin-top: 20px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.form textarea {
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    resize: 50px;
+}
+
+.form button {
+    display: block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.form button:hover {
+    background-color: #0056b3;
+}
+.button {
+    display: block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #0056b3;
+}
+
+
+/*--------- Styles pour la section Album Musique -----------------------*/
+.albums-container {
+    height: 150%;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    
+}
+
+.album-card {
+    background-color: #e7b0d4;
+    border-radius: 10px;
+    box-shadow: 0 14px 170px rgba(0,0,0,0.1);
+    margin: 60px;
+    padding: 30px;
+    max-width: 350px;
+    text-align: center;
+    height: fit-content;
+}
+
+.album-card img {
+    height: 250px;
+    max-width: 250px;
+    border-radius: 10px;
+    border-color: #0d0d0d;
+    border: 15px;
+    justify-content: center;
+    display: inline-block;
+    object-fit: cover;
+}
+
+.album-card h3 {
+    font-size: 1.5em;
+    margin: 10px 0;
+    color: #0d0d0d;
+}
+
+.album-card p {
+    font-size: 1em;
+    margin: 10px 0;
+    color: #0d0d0d;
+}
+
+.songs-list {
+    margin-top: 20px;
+    color: #0d0d0d;
+}
+
+.song-item {
+    margin-bottom: 10px;
+}
+
+.song-item p {
+    margin: 0;
+    color: #0d0d0d;
+}
+
+.song-item audio {
+    width: 100%;
+    margin-top: 5px;
+}
+
+/*------------------- Autres Styles pour la section Vidéos --------------------------------------*/
+
+.video-card video {
+    height: 150px;
+    margin-top: 10px;
+    color: #818181;
+}
+
+.comments-list {
+    margin-top: 20px;
+}
+
+.comment-item {
+    margin-bottom: 10px;
+}
+
+.comment-item p {
+    margin: 0;
+    color: #818181;
+}
+
+form textarea {
+    width: 70%;
+    height: 50px;
+}
+
+/* ----------------------- Styles pour la section Vidéos ---------------------*/
+.videos-container {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.video-row {
+    display: flex;
+    overflow-x: auto;
+    margin-bottom: 20px;
+    color: #818181;
+}
+
+.video-card {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    margin: 10px;
+    padding: 10px;
+    min-width: 200px;
+    max-width: 300px;
+    text-align: center;
+    flex: 0 0 auto;
+    color: #818181;
+}
+
+.video-card img {
+    max-width: 100%;
+    border-radius: 10px;
+    justify-content: center;
+    display: inline-block;
+}
+
+.video-card h3 {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+.video-card p {
+    font-size: 1em;
+    margin: 10px 0;
+    color: #818181;
+}
+
+.video-wrapper {
+    position: relative;
+}
+
+.play-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px 0;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.play-btn:hover {
+    background-color: #0056b3;
+}
+
+video {
+    height:60%;
+    width: 100%;
+    display: flex;
+}
+
+.play-video {
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.hidden-videopresentation {
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+.comments-section {
+    margin-top: 20px;
+}
+
+.comment {
+    margin-bottom: 10px;
+}
+
+.likes-dislikes {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+/* autre section video avec chargement différé --------------------------------*/
+
+.video-card {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 200px;
+    text-align: center;
+}
+.video-card video {
+    width: 100%;
+}
+
+/* ------------------------- ACCESSIBILITE -------------------------------*/
+.settings-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #141414;
+}
+.settings-container h2 {
+    text-align: center;
+}
+.settings-container label {
+    display: block;
+    margin: 15px 0 5px;
+}
+.settings-container select, .settings-container input[type="checkbox"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+}
+.settings-container button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.settings-container button:hover {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #0056b3;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* ------------------------- DALTONIEN MODE -------------------------------*/
+.color-blind-mode {
+    filter: grayscale(100%);
+}
+
+/* -------------- Ajout des styles CSS pour l'icône de l'utilisateur ----------------*/
+
+.navbar {
+    background-color: #333;
+    overflow: hidden;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.nav-logo {
+    color: white;
+    font-size: 24px;
+    text-decoration: none;
+}
+
+.nav-menu a {
+    color: white;
+    padding: 14px 20px;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.nav-menu a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.user-icon {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    vertical-align: middle;
+}
+
+
+
+
+

@@ -1,0 +1,4 @@
+callApi();
+mouseOverMeteo();
+mouseOutMeteo();
+mouseOutInfos();
