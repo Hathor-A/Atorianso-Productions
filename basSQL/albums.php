@@ -5,15 +5,19 @@ if (isset($_POST['submit']))
     {
         if(isset($_POST['user']) and isset($_POST['password'])){
  
-             $link = mysql_connect("localhost", "u361662842_atorianso", "Ada2024@");
-             mysql_select_db("u361662842_contacts_users", $link);
-             $reponse = mysql_query("SELECT * FROM membres WHERE users='".$_POST['user']."' and password='".$_POST['password']."'");
-             if(mysql_num_rows($reponse) == 1){
-                //contient un admin
-                $var = htmlspecialchars($var);
-                $user = mysql_fetch_assoc($user);
-                $_SESSION['user'] = $user;
-                $_SESSION['password'] = $password; 
+             $user = $_POST['user'];
+             $password = $_POST['password'];
+
+$var = "admin";
+
+$link = mysqli_connect("localhost", "u361662842_atorianso", "Ada2024@", "u361662842_contacts_users");
+
+if (!$link) {
+    echo "Error: Unable to connect to MySQL." . PHP_EOL;
+    echo "Debugging errno: " . mysqli_connect_errno() . PHP_EOL;
+    echo "Debugging error: " . mysqli_connect_error() . PHP_EOL;
+    exit;
+}
 echo "<p>Bienvenue ".$_POST['user']."</p><p><a href='logout.php?action=logout' title='Déconnexion'>Se déconnecter</a></p>
                 <p><a href='/basSQL/header.php'>Page membre</a></p>";
 }
@@ -25,9 +29,8 @@ echo "<p>Bienvenue ".$_POST['user']."</p><p><a href='logout.php?action=logout' t
                 
                   
          }
-    };
             if (!isset($_POST['submit']))
-
+    
     // Récupération des albums
     $sql_albums = "SELECT * FROM albums";
     $stmt_albums = $conn->prepare($sql_albums);
