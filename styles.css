@@ -62,6 +62,7 @@ header {
     padding-right: 590em;
     color: rgb(249, 248, 250);
     overflow-y: scroll;
+    z-index: 10;
     
 }
 
