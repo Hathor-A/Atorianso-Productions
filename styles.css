@@ -160,6 +160,7 @@ footer {
     position: fixed; 
     top: 0;
     width: 100%;
+    z-index: 1000;
 }
 
 .filter-nav ul {
@@ -212,14 +213,8 @@ footer {
     z-index: 10;
     
 }
-.dropdown-menu {
-    position: absolute;
-    z-index: 9;
-}
-
 #filters-nav a:hover {
     color: #c80e33;
-    
 }
 
 /* ---------------- NAVIGATION SECTION --------------------------------------------> */
@@ -263,7 +258,7 @@ nav ul li a:hover {
     height: 150%;
     width: 0px;
     position: fixed;
-    z-index: 7;
+    z-index: 11;
     top: 0;
     left: 0;
     background-color: #111;
@@ -296,7 +291,7 @@ nav ul li a:hover {
     color: #818181;
     display: flex;
     transition: 0.3s;
-    align-items: baseline;
+    align-items: flex-start;
     gap: 10px;
 }
 
@@ -321,25 +316,27 @@ nav ul li a:hover {
     padding-top: 5px;
     border: none;
     border-radius: 15px;
-    position: absolute;
-    bottom: 650px;
+    bottom: 615px;
+    position: fixed;
+    z-index: 10;
+    opacity: 0; /* Rend invisible le bouton */
+    transition: opacity 0.3s ease; /* Animation de transition */
 }
 
 .openbtn:hover {
     background-color: #444;
+    opacity: 1; /* Rend le bouton visible quand on survole la zone */
 }
 
 /* ---------------- CONTENT SECTION ---------------------------------------- */
 
 .content-section {
     margin-bottom: 40px;
-    z-index: 5;
 }
 
 .content-section_2 {
     margin-bottom: 40px;
     padding: 20px;
-    z-index: 4;
 }
 
 .content-section_3 {
