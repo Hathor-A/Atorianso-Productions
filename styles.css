@@ -159,7 +159,6 @@ footer {
     position: fixed; 
     top: 0;
     width: 100%;
-    z-index: 1000; 
 }
 
 .filter-nav ul {
@@ -195,6 +194,7 @@ footer {
     justify-content: space-between;
     align-items: center;
     padding: 0px 360px;
+    z-index: 10;
     
 }
 
@@ -208,7 +208,12 @@ footer {
     padding: 5px;
     padding-top: 0px;
     overflow-y: scroll;
+    z-index: 10;
     
+}
+.dropdown-menu {
+    position: absolute;
+    z-index: 9;
 }
 
 #filters-nav a:hover {
@@ -223,7 +228,7 @@ nav ul {
     margin: 0;
     padding: 0;
     padding-top: 20px;
-    
+    z-index: 8;
     
 }
 
@@ -237,6 +242,7 @@ nav ul li button {
     color: #efecf1;
     font-weight: bold;
     cursor: pointer;
+    z-index: 8;
 }
 
 nav ul li a {
@@ -244,6 +250,7 @@ nav ul li a {
     color: #515053;
     font-weight: bold;
     border-radius: 5px;
+    z-index: 8;
 }
 
 
@@ -255,7 +262,7 @@ nav ul li a:hover {
     height: 150%;
     width: 0px;
     position: fixed;
-    z-index: 1;
+    z-index: 7;
     top: 0;
     left: 0;
     background-color: #111;
@@ -270,7 +277,7 @@ nav ul li a:hover {
     height: 180%;
     width: 0px;
     position: fixed;
-    z-index: 1;
+    z-index: 7;
     top: 0;
     left: 0;
     background-color: #111;
@@ -325,11 +332,13 @@ nav ul li a:hover {
 
 .content-section {
     margin-bottom: 40px;
+    z-index: 5;
 }
 
 .content-section_2 {
     margin-bottom: 40px;
     padding: 20px;
+    z-index: 4;
 }
 
 .content-section_3 {
@@ -340,6 +349,7 @@ nav ul li a:hover {
 
 .content-section_2 h2 {
     margin-bottom: 20px;
+    z-index: 3;
 }
 
 .content-section h2 {
@@ -351,12 +361,14 @@ nav ul li a:hover {
     gap: 10px;
     overflow-x: scroll;
     width: 100%;
+    z-index: 6;
 }
 
 .card-container_2 {
     display: flex;
     gap: 10px;
     overflow-x: scroll;
+    z-index: 6;
 }
 .card {
     background-color: #333;
