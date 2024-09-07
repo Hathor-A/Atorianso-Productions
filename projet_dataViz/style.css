@@ -1,8 +1,9 @@
 .map__image{
     
-    width: 45%;
+    width: 55%;
     float: left;
-    margin-top: 5%;
+    margin-top: 15%;
+    padding-left: 100px;
     margin-left: -100px;
     filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 0.4));
    
@@ -36,7 +37,6 @@
 body {
     
     max-width: 100%;
-    overflow-x: scroll;
     max-height: 100vh;
     justify-content: center;
     display: flex;
@@ -45,11 +45,13 @@ body {
 }
 
 h1 {
-    
+    position: fixed;
     font-family: "quicksand", sans-serif;
     color: white;
     text-shadow: 2px 2px #285771;
     margin-left: 5px;
+    padding-top: 60px;
+    z-index: 10;
 } 
 
 .box-container{

@@ -12,6 +12,8 @@ body {
     cursor: pointer;
     height: 500vh;
     margin: 10;
+    padding: 5px;
+    padding-bottom: 30px;
     font-family: Arial, sans-serif;
     background-color: #141414;
     color: #ffffff;
@@ -50,12 +52,14 @@ body {
 }
 
 header {
+    position: fixed;
     background-color: #333;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
     color: rgb(249, 248, 250);
+    z-index: 10;
 }
 
 header .logo img {
@@ -65,13 +69,16 @@ header .logo img {
 
 main {
     padding: 20px;
+    padding-top: 150px;
+    margin-top: 30px;
 }
 
-
 a {
+    position: relative;
     display: block;
     text-decoration: none;
     color: inherit;
+    margin: 5px;
 }
 
 img {
@@ -111,11 +118,13 @@ nav ul {
     list-style-type: none;
     display: flex;
     margin: 0;
-    padding: 0;
+    padding: 10;
+    padding-top: 20px;
+    z-index: 8;
 }
 
 nav ul li {
-    margin: 0 15px;
+    margin: 0 25px;
 }
 
 nav ul li button {
@@ -263,7 +272,7 @@ p {
     background-color: #111;
     overflow-x: hidden;
     transition: 0.5s;
-    padding-top: 100px;
+    padding-top: 150px;
     padding-bottom: 20px;
     /*display: none; -> Nav cachée par défaut */
 }
@@ -290,6 +299,8 @@ p {
     color: #818181;
     display: flex;
     transition: 0.3s;
+    align-items: flex-start;
+    gap: 10px;
 }
 
 .side-nav a:hover {
@@ -298,7 +309,7 @@ p {
 
 .side-nav .closebtn {
     position: absolute;
-    top: 0;
+    top: 1;
     right: 25px;
     font-size: 36px;
     margin-left: 50px;
@@ -310,11 +321,19 @@ p {
     background-color: #111;
     color: white;
     padding: 10px 15px;
+    padding-top: 5px;
     border: none;
+    border-radius: 15px;
+    bottom: 615px;
+    position: fixed;
+    z-index: 10;
+    opacity: 0; /* Rend invisible le bouton */
+    transition: opacity 0.3s ease; /* Animation de transition */
 }
 
 .openbtn:hover {
     background-color: #444;
+    opacity: 1; /* Rend le bouton visible quand on survole la zone */
 }
 
 /* ============================== CREDITS =============================> */
