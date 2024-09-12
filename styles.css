@@ -71,6 +71,7 @@ header .logo img {
     height: 3em;
     width: 13em;
     border-radius: 5px;
+    box-shadow: 15px 15px 30px rgba(8, 8, 8, 0.5); /* Ajout d'une ombre portée */
     
     
 }
@@ -161,6 +162,7 @@ footer {
     top: 0;
     width: 100%;
     z-index: 1000;
+    box-shadow: 15px 15px 30px rgba(8, 8, 8, 0.5); /* Ajout d'une ombre portée */
 }
 
 .filter-nav ul {
@@ -169,6 +171,7 @@ footer {
     padding: 0;
     overflow: hidden;
     background-color: #333;
+    box-shadow: 15px 15px 30px rgba(8, 8, 8, 0.5); /* Ajout d'une ombre portée */
 }
 
 .filter-nav ul li {
@@ -197,7 +200,6 @@ footer {
     align-items: center;
     padding: 0px 360px;
     z-index: 10;
-    
 }
 
 #filters-nav a {
@@ -211,7 +213,6 @@ footer {
     padding-top: 0px;
     overflow-y: scroll;
     z-index: 10;
-    
 }
 #filters-nav a:hover {
     color: #c80e33;
@@ -266,6 +267,7 @@ nav ul li a:hover {
     transition: 0.5s;
     padding-top: 100px;
     padding-bottom: 20px;
+    box-shadow: 15px 15px 30px rgba(8, 8, 8, 0.5); /* Ajout d'une ombre portée */
     /*display: none; -> Nav cachée par défaut */
 }
 
@@ -321,6 +323,7 @@ nav ul li a:hover {
     z-index: 10;
     opacity: 0; /* Rend invisible le bouton */
     transition: opacity 0.3s ease; /* Animation de transition */
+    box-shadow: 15px 15px 30px rgba(8, 8, 8, 0.5); /* Ajout d'une ombre portée */
 }
 
 .openbtn:hover {
@@ -360,6 +363,7 @@ nav ul li a:hover {
     overflow-x: scroll;
     width: 100%;
     z-index: 6;
+    
 }
 
 .card-container_2 {
@@ -376,6 +380,7 @@ nav ul li a:hover {
     flex: 0 0 auto;
     text-decoration: none; /* Supprime la décoration de texte par défaut des liens */
     color: inherit; /* Hérite la couleur du texte du parent */
+    box-shadow: 15px 15px 30px rgba(8, 8, 8, 0.5); /* Ajout d'une ombre portée */
 }
 
 .card h3 {
