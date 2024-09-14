@@ -307,8 +307,31 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 });
-*/
 
+
+// Fonction pour ouvrir la sidenav
+function openNav() {
+  document.getElementById("side-nav").classList.add("openbtn");
+}
+
+// Fonction pour fermer la sidenav
+function closeNav() {
+  document.getElementById("side-nav").classList.remove("openbtn");
+}
+
+// Ajoute des événements pour la souris
+let sidenav = document.getElementById("side-nav");
+
+// Ouvre la sidenav lorsque la souris entre
+sidenav.addEventListener("mouseenter", function() {
+  openNav();
+});
+
+// Ferme la sidenav lorsque la souris sort
+sidenav.addEventListener("mouseleave", function() {
+  closeNav();
+});
+*/
 
 // Fonctions pour la gestions des likes et des pas likes ----------------------------------------->
 function likeComment(commentId) {

@@ -68,6 +68,7 @@ header {
 
 header .logo img {
     position: fixed;
+    align-items: center;
     height: 3em;
     width: 13em;
     border-radius: 5px;
@@ -269,6 +270,7 @@ nav ul li a:hover {
     padding-bottom: 20px;
     box-shadow: 15px 15px 30px rgba(8, 8, 8, 0.5); /* Ajout d'une ombre portée */
     /*display: none; -> Nav cachée par défaut */
+    /*transform: translateX(100px);  Masque la sidenav */
 }
 
 .side-nav {
@@ -293,7 +295,7 @@ nav ul li a:hover {
     color: #818181;
     display: flex;
     transition: 0.3s;
-    align-items: flex-start;
+    align-items: center;
     gap: 10px;
 }
 
@@ -324,6 +326,7 @@ nav ul li a:hover {
     opacity: 0; /* Rend invisible le bouton */
     transition: opacity 0.3s ease; /* Animation de transition */
     box-shadow: 15px 15px 30px rgba(8, 8, 8, 0.5); /* Ajout d'une ombre portée */
+    /*transform: translateX(100);  Fait apparaître la sidenav */
 }
 
 .openbtn:hover {
